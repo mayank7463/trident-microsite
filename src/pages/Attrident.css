@@ -1,0 +1,19 @@
+.bgImage {
+  background-image: url('../assets/Theme.webp');
+  background-image: url('../assets/Theme.webp');
+  background-size: cover; /* This will ensure the image covers the entire div */
+  background-position: center; /* This will center the image */
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+}
+
+.stayClassy {
+  font-family: 'Stay Classy SLDT';
+  font-size: 300px;
+  color: white;
+  margin-left: 10%;
+}
+
+.atTrident {
+
+}

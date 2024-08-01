@@ -1,0 +1,135 @@
+
+* {
+  font-family: 'DIN Pro';
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: 'Stay Classy SLDT';
+  src: url('/public/Fonts/StayClassySLDT.woff2') format('woff2'),
+      url('/public/Fonts/StayClassySLDT.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('/public/Fonts/DINPro-BlackItalic.woff2') format('woff2'),
+      url('/public/Fonts/DINPro-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('/public/Fonts/DINPro-Black.woff2') format('woff2'),
+      url('/public/Fonts/DINPro-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('/public/Fonts/DINPro-BoldItalic.woff2') format('woff2'),
+      url('/public/Fonts/DINPro-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('/public/Fonts/DINPro.woff2') format('woff2'),
+      url('/public/Fonts/DINPro.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('/public/Fonts/DINPro-Bold.woff2') format('woff2'),
+      url('/public/Fonts/DINPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro Cond';
+  src: url('/public/Fonts/DINPro-CondensedLight.woff2') format('woff2'),
+      url('/public/Fonts/DINPro-CondensedLight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro Cond';
+  src: url('/public/Fonts/DINPro-CondensedBlackItalic.woff2') format('woff2'),
+      url('/public/Fonts/DINPro-CondensedBlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro Cond';
+  src: url('/public/Fonts/DINPro-CondensedBoldItalic.woff2') format('woff2'),
+      url('/public/Fonts/DINPro-CondensedBoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro Cond';
+  src: url('/public/Fonts/DINPro-CondensedItalic.woff2') format('woff2'),
+      url('/public/Fonts/DINPro-CondensedItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro Cond';
+  src: url('/public/Fonts/DINPro-CondensedBlack.woff2') format('woff2'),
+      url('/public/Fonts/DINPro-CondensedBlack.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro Cond';
+  src: url('/public/Fonts/DINPro-CondensedBold.woff2') format('woff2'),
+      url('/public/Fonts/DINPro-CondensedBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+.text-font{
+  font-family: 'Stay Classy SLDT';
+}
+.marginal{
+  width: 86%;
+  margin: auto;
+}
+
+.bg{
+  border: 1px solid red;
+}
+
+.xyz{
+  width: 390% !important;
+    /* background-color: none !important; */
+  }
