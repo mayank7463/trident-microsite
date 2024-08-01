@@ -147,20 +147,21 @@ const Navbar = () => {
           <li>
             <a href="#" className="menu-item">Management Reports</a>
             <ul className="dropdown-menu">
-              <li><Link target='_blank' to={'./Pdf/04 HIL Standalone 03.07.2024.pdf'} className="menu-item">Management Discussion and Analysis</Link></li>
-              <li><Link target='_blank' to={'./Pdf/05 HIL Consol 03.07.2024.pdf'} className="menu-item">Business Responsibility
+              <li><Link target='_blank' to={'./pdf/02. Trident MDA 24.07.2024.pdf'} className="menu-item">Management Discussion and Analysis</Link></li>
+              <li><Link target='_blank' to={'./pdf/03. Trident BRSR 24.07.2024.pdf'} className="menu-item">Business Responsibility
               & Sustainability Reporting</Link></li>
-              <li><Link target='_blank' to={'./Pdf/04 HIL Standalone 03.07.2024.pdf'} className="menu-item">Directors’ Report</Link></li>
-              <li><Link target='_blank' to={'./Pdf/05 HIL Consol 03.07.2024.pdf'} className="menu-item">Corporate Governance Report</Link></li>
+              <li><Link target='_blank' to={'./pdf/04. Trident DR 24.07.2024.pdf'} className="menu-item">Directors’ Report</Link></li>
+              <li><Link target='_blank' to={'./pdf/05. Trident CG 24.07.2024.pdf'} className="menu-item">Corporate Governance Report</Link></li>
             </ul>
           </li>
-          <li>
+          <li className=''>
             <a href="#" className="menu-item">Financial Statements</a>
             <ul className="dropdown-menu">
-              <li><Link target='_blank' to={'./Pdf/04 HIL Standalone 03.07.2024.pdf'} className="menu-item">Standalone</Link></li>
-              <li><Link target='_blank' to={'./Pdf/05 HIL Consol 03.07.2024.pdf'} className="menu-item">Consolidated</Link></li>
+              <li><Link target='_blank' to={'./pdf/06. Trident SFS 24.07.2024.pdf'} className="menu-item">Standalone</Link></li>
+              <li><Link target='_blank' to={'./pdf/07. Trident CFS 24.07.2024.pdf'} className="menu-item">Consolidated</Link></li>
             </ul>
           </li>
+          <li><Link target='_blank' to={'./pdf/Trident Notice 24.07.2024.pdf'} className="menu-item">Notice</Link></li>
           <li><Link target='_blank' to={'https://assets.tridentindia.com/Final_Annual_Report_2023_24_8f17c9414b.pdf'} className="menu-item download bg-[#0c8678]" >Download full Report</Link></li>
         </ul>
       </header>
