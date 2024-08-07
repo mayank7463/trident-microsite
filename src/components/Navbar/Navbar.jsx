@@ -131,6 +131,7 @@ const Navbar = () => {
                           <li><Link to={'/social'} className="menu-item">Social</Link></li>
                           <li><Link to={'/bod'} className="menu-item">Board of Directors</Link></li>
                           <li><Link to={'/excellence'} className="menu-item">Excellence at its best</Link></li>
+                          <li><Link target='_blank' to={'./pdf/CITRIDENT.pdf'} className="menu-item">Corporate Information</Link></li>
                     </div>
                </div>
             </ul>

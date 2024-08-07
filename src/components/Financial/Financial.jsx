@@ -18,14 +18,13 @@ const dataSets = [
   { label: 'PBT(₹ in million)', data: [4212, 4451, 10917, 5543, 5163], years: ['FY20', 'FY21', 'FY22', 'FY23', 'FY24'] },
   { label: 'PAT(₹ in million)', data: [3418, 3457, 8150, 4219, 3896], years: ['FY20', 'FY21', 'FY22', 'FY23', 'FY24'] },
   { label: 'EPS(₹ per share)', data: [0.67, 0.68, 1.63, 0.84, 0.78], years: ['FY20', 'FY21', 'FY22', 'FY23', 'FY24'] },
-
 ];
 
 const Financial = () => {
   const renderCharts = () => {
     return dataSets.map((dataset, index) => {
       // Define an array of five different colors
-      const colors = ['#febd2a', '#5B8678', '#58595B', '#A7A9AC', '#D1D3D4'];
+      const colors = ['#febd2a', '#5B8678', '#58595B', '#9fa0a1', '#D1D3D4'];
 
       const data = {
         labels: dataset.years,
@@ -105,11 +104,14 @@ const Financial = () => {
 
   return (
     <div className='marginal graph'>
-      <h2 className='text-center text-[#febd2a] text-font text-7xl py-8'>Financial<span className='pl-10 text-[#58aba0] text-font '>Highlights</span></h2>
+      <h2 className='text-center text-[#febd2a] text-font text-7xl py-8'>
+        Financial<span className='pl-10 text-[#58aba0] text-font'>Highlights</span>
+      </h2>
       <Carousel
         additionalTransfrom={0}
         arrows
-        autoPlaySpeed={3000}
+        autoPlay // Enable autoplay
+        autoPlaySpeed={3000} // Speed of autoplay
         centerMode={false}
         containerClass=""
         dotListClass=""
@@ -150,7 +152,6 @@ const Financial = () => {
       <div className='mb-4'>
         <Link to={"/financial-highlights"}><ReadMoreButton/></Link>
       </div>
-     
     </div>
   );
 };

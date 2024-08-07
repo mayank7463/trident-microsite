@@ -1,0 +1,8 @@
+.tilting-image {
+    transition: transform 0.3s ease;
+  }
+  
+  .tilting-image:hover {
+    transform: rotate(10deg);
+  }
+  

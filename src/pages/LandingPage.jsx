@@ -6,6 +6,7 @@ import Financial from '../components/Financial/Financial'
 import Mapping from '../components/Mapping/Mapping'
 import Chairman from '../components/Chairman/Chairman'
 import AtTrident from '../components/AtTrident/AtTrident'
+import OurPresence from '../components/OurPresence/OurPresence'
 
 function LandingPage() {
   return (

@@ -1,0 +1,127 @@
+.map-container {
+    width: 100%;
+    overflow: hidden; /* Ensure pins stay within the container */
+  }
+  
+  .map-wrap {
+    position: relative;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .map-wrap img {
+    width: 100%;
+    display: block; /* Ensure the map image takes full width and is centered */
+  }
+  
+  .title-bg {
+    background: linear-gradient(to left, transparent, rgba(206, 229, 238, 1) 20%);
+  }
+  
+  .pin {
+    position: absolute;
+    transform: translate(-50%, -50%); /* Centers the pin image on its position */
+    width: 10%; /* Adjust based on pin size */
+  }
+  
+  .pin1 {
+    left: 62.5%;
+    top: 38.7%;
+  }
+  
+  .pin2 {
+    left: 76%;
+    top: 28%;
+    width: 6%;
+  }
+  
+  .pin3 {
+    left: 77%;
+    top: 35%;
+    width: 15%;
+    
+}
+  
+  .pin4 {
+    left: 75%;
+    top: 44%;
+  }
+  
+  .pin5 {
+    left: 22%;
+    top: 28%;
+    width: 12%;
+  }
+  
+  .pin6 {
+    left: 48%;
+    top: 29%;
+    width: 12%;
+  }
+  
+
+  /* This CSS was inspired by the blue pulsing dot in Grammarly */
+:root {
+  --pulseSize: 12px;
+  --blue: #f8b929;
+  --transparentBlue: rgba(63, 46, 6, 0);
+}
+
+
+
+.pulse-country {
+  width: var(--pulseSize);
+  height: var(--pulseSize);
+  border-radius: 50%;
+  background: var(--blue);
+  box-shadow: 0 0 0 var(--blue);
+  animation: pulsing 2s infinite;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.pulse-state {
+  width: var(--pulseSize);
+  height: var(--pulseSize);
+  border-radius: 50%;
+  background: #f38720;
+  box-shadow: 0 0 0 #f38720;
+  animation: pulsing 2s infinite;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+
+
+@keyframes pulsing {
+  from {
+    box-shadow: 0 0 0 0 var(--blue);
+  }
+  70% {
+    box-shadow: 0 0 0 var(--pulseSize) var(--transparentBlue);
+  }
+  to {
+    box-shadow: 0 0 0 0 var(--transparentBlue);
+  }
+}
+
+.tooltip{
+  padding: 7% 14%;
+  background-color: #0c8678;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  display: none;
+  top:-30px;
+  left: -20%;
+  /* transform: translateX(-50%); */
+  transition: all 0.3s ease-in-out;
+}
+.pulse-country:hover .tooltip{
+ display: block;
+}
+
+.pulse-state:hover .tooltip{
+  display: block;
+ }

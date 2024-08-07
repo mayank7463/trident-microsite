@@ -25,7 +25,7 @@ const Trends = () => {
   return (
     <div className="mx-6 md:mx-12 lg:mx-24 mt-12">
       <motion.div
-        className="w-1/3 mx-auto mb-6"
+        className="w-1/3  mb-6"
         initial="hidden"
         animate="visible"
         variants={fastFadeIn}

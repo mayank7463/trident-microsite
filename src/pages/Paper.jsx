@@ -1,47 +1,53 @@
-import React, { useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import React from 'react';
 
 const Paper = () => {
-  const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.1 });
-
-  useEffect(() => {
-    if (inView) {
-      controls.start('visible');
-    }
-  }, [controls, inView]);
-
-  const fastFadeIn = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 0.5 } },
-  };
-
-  const fastFadeInUp = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  };
-
   return (
     <div className="mx-6 md:mx-12 lg:mx-24 mt-12">
-      <motion.div
-        className="w-1/3 mx-auto mb-6"
-        initial="hidden"
-        animate="visible"
-        variants={fastFadeIn}
-      >
+      <div className="w-1/3 mb-6">
         <img src="../assets/paper.svg" alt="Paper" className="w-full h-auto" />
-      </motion.div>
+      </div>
 
-      <motion.div
-        className="w-full"
-        initial="hidden"
-        animate={controls}
-        variants={fastFadeInUp}
-        ref={ref}
-      >
-        <img src="../assets/portfolio.png" alt="Portfolio" className="w-full h-auto" />
-      </motion.div>
+      <div className="grid lg:grid-cols-3 grid-cols-1 gap-4 my-16 ">
+          <div className='w-[70%] shadow-xl hover:scale-125 transition-transform duration-200'>
+               <img src="./brand/brand-1.png" alt="" />
+          </div>
+          <div className='w-[70%] shadow-xl hover:scale-125 transition-transform duration-200'>
+               <img src="./brand/brand-2.png" alt="" />
+          </div>
+          <div className='w-[70%] shadow-xl hover:scale-125 transition-transform duration-200'>
+               <img src="./brand/brand-3.png" alt="" />
+          </div>
+          <div className='w-[70%] shadow-xl hover:scale-125 transition-transform duration-200'>
+               <img src="./brand/brand-4.png" alt="" />
+          </div>
+          <div className='w-[70%] shadow-xl hover:scale-125 transition-transform duration-200'>
+               <img src="./brand/brand-5.png" alt="" />
+          </div>
+      </div>
+      <div className='h-[1px] w-full bg-[#000]'></div>
+      <div className="grid lg:grid-cols-3 grid-cols-1 gap-4 my-16">
+          <div className='w-[70%] shadow-xl hover:scale-125 transition-transform duration-200 '>
+               <img src="./brand/brand-6.png" alt="" />
+          </div>
+          <div className='w-[70%] shadow-xl hover:scale-125 transition-transform duration-200'>
+               <img src="./brand/brand-7.png" alt="" />
+          </div>
+          <div className='w-[70%] shadow-xl hover:scale-125 transition-transform duration-200'>
+               <img src="./brand/brand-8.png" alt="" />
+          </div>
+          <div className='w-[70%] shadow-xl hover:scale-125 transition-transform duration-200'>
+               <img src="./brand/brand-9.png" alt="" />
+          </div>
+          <div className='w-[70%] shadow-xl hover:scale-125 transition-transform duration-200'>
+               <img src="./brand/brand-10.png" alt="" />
+          </div>
+          <div className='w-[70%] shadow-xl hover:scale-125 transition-transform duration-200'>
+               <img src="./brand/brand-11.png" alt="" />
+          </div>
+          <div className='w-[70%] shadow-xl hover:scale-125 transition-transform duration-200'>
+               <img src="./brand/brand-12.png" alt="" />
+          </div>
+      </div>
     </div>
   );
 };

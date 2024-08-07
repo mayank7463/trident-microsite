@@ -1,55 +1,17 @@
-import React, { useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import React from "react";
 
 const Diverse = () => {
-  const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.1 });
-
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [controls, inView]);
-
-  const fastFadeInUp = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  };
-
-  const fastFadeIn = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 0.5 } },
-  };
-
   return (
     <div className="mx-6 md:mx-12 lg:mx-24 mt-12">
-      <motion.div
-        className="w-full md:w-1/3 mx-auto mb-6"
-        initial="hidden"
-        animate="visible"
-        variants={fastFadeIn}
-      >
+      <div className="w-full md:w-1/3  mb-6">
         <img src="../assets/diverse.svg" alt="Diverse" />
-      </motion.div>
+      </div>
 
-      <motion.div
-        className="mb-4 font-bold text-2xl font-thin text-[#793a23]"
-        initial="hidden"
-        animate={controls}
-        variants={fastFadeInUp}
-        ref={ref}
-      >
+      <div className="mb-4 text-2xl font-thin text-[#793a23]">
         At Trident, we are dedicated to weaving excellence into everything we do. This dedication starts with our products.
-      </motion.div>
+      </div>
 
-      <motion.div
-        className="mb-12"
-        initial="hidden"
-        animate={controls}
-        variants={fastFadeInUp}
-        ref={ref}
-      >
+      <div className="mb-12">
         <h4 className="text-[#148979] font-bold">Evolving with lifestyles</h4>
         <p className="mb-4">
           We continuously innovate our product range, ensuring our yarns, bed and bath linens and eco-friendly paper meet the changing preferences of the contemporary customer.
@@ -96,19 +58,13 @@ const Diverse = () => {
         </p>
 
         <h4 className="text-[#148979] font-bold">Revenue split between segments</h4>
-      </motion.div>
+      </div>
 
-      <motion.div
-        className="flex justify-center gap-6"
-        initial="hidden"
-        animate={controls}
-        variants={fastFadeInUp}
-        ref={ref}
-      >
+      <div className="flex justify-center gap-6">
         <img className="w-1/3" src="../assets/e1.png" alt="Revenue segment 1" />
         <img className="w-1/3" src="../assets/e2.png" alt="Revenue segment 2" />
         <img className="w-1/3" src="../assets/e3.png" alt="Revenue segment 3" />
-      </motion.div>
+      </div>
     </div>
   );
 };

@@ -1,49 +1,17 @@
-import React, { useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import React from "react";
 
 const Environment = () => {
-  const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.1 });
-
-  useEffect(() => {
-    if (inView) {
-      controls.start('visible');
-    }
-  }, [controls, inView]);
-
-  const fastFadeInUp = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  };
-
-  const fastFadeIn = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 0.5 } },
-  };
-
   return (
     <div className="mx-6 md:mx-12 lg:mx-24 mt-12">
-      <motion.div
-        className="w-1/3 mx-auto mb-6"
-        initial="hidden"
-        animate="visible"
-        variants={fastFadeIn}
-      >
+      <div className="w-1/3 mb-6">
         <img
           src="../assets/environment.svg"
           alt="Environment"
           className="w-full h-auto"
         />
-      </motion.div>
+      </div>
 
-      <motion.div
-        className="mb-6"
-        initial="hidden"
-        animate={controls}
-        variants={fastFadeInUp}
-        ref={ref}
-      >
+      <div className="mb-6">
         <h4 className="mb-4 font-bold text-2xl font-thin text-[#793a23]">
           Trident is committed to climate action and to create a positive
           impact for the community and environment in which it operates. The
@@ -61,21 +29,15 @@ const Environment = () => {
           The Company is further committed to sustainability through our 5Rs Practice: Reduce, Reuse, Recycle, Re-engineer, and Redesign. We actively seek alternatives to plastic waste, partnering with recyclers for Extended Producer Responsibility (EPR) initiatives. E-waste is responsibly recycled at our collection centres, while hazardous waste like ETP Sludge is disposed of at authorized Treatment, Storage, and Disposal (TSD) Facilities.<br /><br />
           Our innovations include converting food and biomass waste into electricity via biogas plants and promoting sustainable paper packaging through our “Good Paper” campaign. We prioritize Forest Stewardship Council (FSC) certified papers, reducing carbon and water footprints compared to plastics. Trident remains dedicated to minimizing our environmental impact and promoting responsible resource management, showcasing our commitment to sustainability and environmental stewardship.<br /><br />
         </p>
-      </motion.div>
+      </div>
 
-      <motion.div
-        className="w-full"
-        initial="hidden"
-        animate={controls}
-        variants={fastFadeInUp}
-        ref={ref}
-      >
+      <div className="w-full">
         <img
           src="../assets/Environment.jpg"
           alt="Environment"
           className="w-full h-auto"
         />
-      </motion.div>
+      </div>
     </div>
   );
 };

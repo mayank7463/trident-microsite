@@ -33,14 +33,14 @@ const HeroSection = () => {
       <video
         ref={videoRef}
         className="absolute top-0 left-0 w-full h-full object-cover"
-        src="./Hero/video.webm"
+        src="./Hero/wheat.mp4"
         autoPlay
         loop
         muted
       />
 
       {/* Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-35"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40"></div>
 
       {/* Text content */}
       <div className="relative ">

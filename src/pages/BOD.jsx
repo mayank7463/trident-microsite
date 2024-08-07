@@ -5,9 +5,9 @@ const BOD = () => {
     <div className="mx-6 md:mx-12 lg:mx-24 mt-12">
       <div className="text-center mb-12">
         <img
-          src="/src/assets/bod.svg"
+          src="../assets/bod.svg"
           alt="Board of Directors"
-          className="w-1/3 mx-auto mb-6"
+          className="w-1/3  mb-6"
         />
       </div>
 
